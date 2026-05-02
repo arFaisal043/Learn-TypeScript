@@ -4,6 +4,8 @@
 // In TS extra add: Never, Unknown, Void
 
 
+/*
+
 // _________ string:
 let str: string = "Abdur Rahman Faisal";
 console.log(str);
@@ -68,3 +70,29 @@ if (typeof data === 'string') {
 function logMessage(msg: string): void {
   console.log(msg);
 }
+
+
+
+
+*/
+
+
+
+// ________ Practice_______________________
+
+// - Function with explicit parameter and return types
+function greet(name: string): string {
+return `Hello, ${name}!`;
+}
+
+// TypeScript will ensure you pass the correct argument type
+greet("Alice"); // OK
+greet(42);     // Error: Argument of type '42' is not assignable to parameter of type 'string'
+
+
+
+
+
+
+
+
