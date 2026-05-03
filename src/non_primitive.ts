@@ -57,5 +57,5 @@ const car: { type: string; model: string; year?: number; readonly color: string 
     color: "red"
 };
  
-car.color = "blue"; // get error
-console.log(car);
+// car.color = "blue"; // get error
+// console.log(car);
