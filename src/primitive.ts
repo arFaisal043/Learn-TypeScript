@@ -82,7 +82,7 @@ function logMessage(msg: string): void {
 
 // - Function with explicit parameter and return types
 function greet(name: string): string {
-return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
 
 // TypeScript will ensure you pass the correct argument type

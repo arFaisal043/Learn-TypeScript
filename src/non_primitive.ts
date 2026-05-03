@@ -56,6 +56,6 @@ const car: { type: string; model: string; year?: number; readonly color: string 
     model: "Corolla",
     color: "red"
 };
-
-car.color = "blue"; 
+ 
+car.color = "blue"; // get error
 console.log(car);
