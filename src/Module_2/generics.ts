@@ -120,7 +120,10 @@ function numberIdentity(value: number): number {
 
 
 
+
+
 // _________ WITH GENERICS - Best of both worlds
+
 function identity<T>(value: T): T {
   return value;
 }

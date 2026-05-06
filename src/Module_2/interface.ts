@@ -14,6 +14,10 @@ const user: User = {
 
 console.log(user); // { id: 1, name: 'John Doe', email: 'john@example.com' }
 
+
+
+
+
 // ___________ Extends Interface __________________________________
 
 interface Animal {

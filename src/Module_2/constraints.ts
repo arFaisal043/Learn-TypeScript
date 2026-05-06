@@ -1,6 +1,3 @@
-
-
-
 // _______ Basic Syntax ____________________________
 
 // T must have a 'length' property
