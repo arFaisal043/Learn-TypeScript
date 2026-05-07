@@ -41,6 +41,8 @@ enum UserRole {
   Viewer = "Viewer"
 }
 
+// UserRole.Admin = "Demo"; // not possible
+
 const canEdit = (role: UserRole) => {
     if(role === UserRole.Admin || role === UserRole.Editor) return true;
     else return false;
