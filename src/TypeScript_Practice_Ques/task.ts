@@ -61,8 +61,49 @@ const getProfile = ({ name, role }: EmployeeType): string => {
 };
 console.log(getProfile(Employee));
 
-*/
 
+
+
+
+
+// __________ Task: 3 _____________________________
+
+type UserResponse = {
+  info?: {
+    address?: {
+      zipCode?: string;
+    };
+  };
+};
+
+const getZipCode = (response: UserResponse): string => {
+  return response.info?.address?.zipCode ?? "00000";
+};
+
+
+// ____ Test Case:
+const validResponse: UserResponse = {
+  info: {
+    address: {
+      zipCode: "90210"
+    }
+  }
+};
+
+const missingZipResponse: UserResponse = {
+  info: {
+    address: {}
+  }
+};
+
+const emptyResponse: UserResponse = {};
+
+console.log(getZipCode(validResponse));     // "90210"
+console.log(getZipCode(missingZipResponse)); // "00000"
+console.log(getZipCode(emptyResponse));      // "00000"
+
+
+*/
 
 
 
